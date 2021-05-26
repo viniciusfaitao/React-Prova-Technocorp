@@ -1,0 +1,90 @@
+.background_lotation {
+  ::-webkit-scrollbar {
+    border-radius: 20px;
+    background: #f4f4f4;
+  }
+
+  ::-webkit-scrollbar-track {
+    border-radius: 20px;
+    background-color: #f4f4f4;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    height: 50px;
+    border-radius: 20px;
+    background: #dad7d7;
+  }
+
+  &_header {
+    text-align: left;
+    padding-left: 15px;
+  }
+
+  &_main {
+    height: 450px;
+    border-radius: 10px;
+    border: 2px solid #efeeee;
+    background-color: #fff;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    &--posts {
+      width: 100%;
+
+      &--head {
+        padding: 0 20px;
+        top: 0;
+        border-bottom: 2px solid #efeeee;
+        background: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: sticky;
+
+        &--tables {
+          width: 50%;
+          font-weight: bold;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+
+          p {
+            padding-right: 20px;
+          }
+        }
+      }
+
+      &--content {
+        height: 60px;
+        padding: 0 20px;
+        border: 0.1px solid #efeeee;
+        display: flex;
+        align-items: center;
+        place-content: space-between;
+
+        &--code {
+          width: 50%;
+          display: contents;
+        }
+
+        &--itinerary {
+          button {
+            width: 120px;
+            height: 30px;
+            font-size: 14px;
+            border: 1px solid #000;
+            border-radius: 10px;
+            background: transparent;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            font-weight: bold;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}
